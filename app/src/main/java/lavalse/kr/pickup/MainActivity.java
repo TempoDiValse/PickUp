@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements ParseConnector.On
     public void onResult(String title, ArrayList<User> results) {
         if(results != null) {
             textTitle.setText(title);
-            textTotal.setText(String.format("총 %d 명", results.size()));
+            textTotal.setText(String.format("총 %d 명 (중복, 디시콘 제거된 결과)", results.size()));
             textLayer.setVisibility(View.VISIBLE);
             listView.setVisibility(View.VISIBLE);
             adapter.setItems(results);
