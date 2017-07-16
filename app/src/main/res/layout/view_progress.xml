@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true" >
+        <ImageView
+            android:id="@+id/progressObj"
+            android:src="@drawable/ic_public_black_24dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal">
+            <Button
+                android:text="재시도"
+                android:textColor="#fff"
+                android:id="@+id/btnRefresh"
+                android:layout_width="55dip"
+                android:layout_height="35dip"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_shape"
+                android:visibility="gone"/>
+
+            <Button
+                android:text="취소"
+                android:textColor="#fff"
+                android:id="@+id/btnCancel"
+                android:layout_width="55dip"
+                android:layout_height="35dip"
+                android:background="@drawable/btn_shape" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
