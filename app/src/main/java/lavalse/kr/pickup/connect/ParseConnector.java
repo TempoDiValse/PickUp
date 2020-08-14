@@ -1,11 +1,9 @@
 package lavalse.kr.pickup.connect;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.view.View;
-import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -14,16 +12,10 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.IOException;
-import java.lang.reflect.Array;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
-import java.util.List;
-import java.util.regex.Pattern;
 
 import lavalse.kr.pickup.ProgressView;
 import lavalse.kr.pickup.model.User;
